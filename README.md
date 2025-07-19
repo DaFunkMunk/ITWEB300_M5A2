@@ -1,0 +1,1 @@
+The challenges faced in this assignment were the same as those indicated in the readme of M5A1, and in going beyond the requirements in assignment 1, the requirements for assignment 2 were met. Again, the biggest challege was making sure the tickets stay in temporary memory, which was achieved.
