@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support Ticket System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Support Ticket System</h1>
+
+    <div class="section">
+      <h2>Submit Ticket</h2>
+      <form id="ticketForm">
+        <input type="text" id="newEmpId" placeholder="Employee ID" required><br>
+        <input type="text" id="newFName" placeholder="First Name" required><br>
+        <input type="text" id="newLName" placeholder="Last Name" required><br>
+        <textarea id="newProblem" placeholder="Problem Description" required></textarea><br>
+        <button type="submit">Submit Ticket</button>
+      </form>
+      <div id="submitResult"></div>
+    </div>
+
+    <div class="section">
+      <h2>Lookup Ticket by Employee ID</h2>
+      <input type="text" id="ticketLookupInput" placeholder="Enter Employee ID">
+      <button id="lookupBtn">Lookup</button>
+      <div id="lookupError"></div>
+
+      <div id="ticketDetails">
+        <h3>Ticket Details</h3>
+        <p><strong>Date:</strong> <span id="reqDate"></span></p>
+        <p><strong>Employee ID:</strong> <span id="empId"></span></p>
+        <p><strong>Name:</strong> <span id="fullName"></span></p>
+        <p><strong>Problem:</strong> <span id="problem"></span></p>
+        <p><strong>Status:</strong> <span id="status"></span></p>
+        <p><strong>Response:</strong> <span id="response"></span></p>
+      </div>
+
+      <h3>Matching Tickets</h3>
+      <div id="ticketListContainer">
+        <div id="ticketList"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>All Submitted Tickets</h2>
+      <div id="allTicketsContainer">
+        <div id="allTickets"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
